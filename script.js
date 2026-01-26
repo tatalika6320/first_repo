@@ -51,6 +51,8 @@ const input2 = document.getElementById('input2');
 const submitBtn = document.getElementById('submit');
 const plusBtn = document.getElementById('plus'); 
 const minusBtn = document.getElementById('minus');
+const multiplicationBtn = document.getElementById('multiplication');
+const divisionBtn = document.getElementById('division');
 let action = '+';
 //console.log(resultElement.textContent);
 //resultElement.textContent = 42;
@@ -66,6 +68,14 @@ plusBtn.onclick = function() {
 
 minusBtn.onclick = function() {
  action = '-'
+}
+
+multiplicationBtn.onclick = function() {
+ action = '*'
+}
+
+divisionBtn.onclick = function() {
+ action = '/'
 }
 
 function printResult(result) {
@@ -86,6 +96,14 @@ if (actionSymbol == '+') {
 
 if (actionSymbol == '-') {
     return num1 - num2
+}
+
+if (actionSymbol == '*') {
+    return num1 * num2
+}
+
+if (actionSymbol == '/') {
+    return num1 / num2
 }
 //return actionSymbol == '+' ? num1 + num2 : num1 - num2 // Тернарний синтакис
 }
