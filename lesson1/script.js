@@ -1,6 +1,7 @@
-let num = 42;
+/*let num = 42;
 let firstName = 'Natalia';
-const isProgrammer = true;
+const isProgrammer = true;*/
+
 
 /*Can Do
 let $ = 'test';
